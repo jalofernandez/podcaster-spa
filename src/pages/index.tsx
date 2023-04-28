@@ -30,18 +30,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <header className={styles.description}>
-          <h1>
-            Podcaster
-          </h1>
+        <header className={styles.header}>
+          <div className={styles.padds}>
+            <h1 className={styles.title}>Podcaster</h1>
+          </div>
         </header>
 
-        <div className={`${styles.grid} ${styles.gap}`}>
+        <section className={`${styles.grid} ${styles.section}`}>
           {Array.isArray(data) && data.map((podcast) => (
-            <article key={podcast.id.label} className={`${styles.article}`}>
-              <picture className={`${styles.picture}`}>
+            <article key={podcast.id.label} className={styles.article}>
+              <picture className={styles.picture}>
                 <img
-                  className={`${styles.image}`}
+                  className={styles.image}
                   src={podcast['im:image'][0].label}
                   alt={podcast['im:name'].label}
                   width={96}
@@ -58,7 +58,7 @@ export default function Home() {
               </div>
             </article>
           ))}
-        </div>
+        </section>
 
         <footer className={styles.center}>
           <Image
