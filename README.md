@@ -1,6 +1,6 @@
-# Project Title & Description
+# PODCASTER SPA
 
-**Podcaster SPA** is a single-page web application that displays an audio playlist obtained from the Apple iTunes API, with a search function and detailed views where each post or song can be played.
+Is a single-page web application that displays an audio playlist obtained from the Apple iTunes API, with a search function and detailed views where each post or song can be played.
 
 ## 🛠 Tech stack
 
