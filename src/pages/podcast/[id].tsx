@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import Header from '@/components/Header'
 import styles from '@/styles/Home.module.css'
 
 import { useRouter } from 'next/router';
@@ -22,11 +23,8 @@ export default function PodcastPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-      <header className={`${styles.header} ${styles.animFadeInRight}`}>
-          <div>
-            <h1 className={styles.title}>{mainTitle}</h1>
-          </div>
-        </header>
+        <Header title={mainTitle} />
+
         <footer className={`${styles.center} ${styles.animOpacity}`}>
           <Image
             className={styles.logo}

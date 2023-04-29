@@ -7,31 +7,6 @@
   overflow: hidden;
 }
 
-.header {
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  width: 100%;
-  max-width: var(--max-width);
-  padding: 0 0.75rem;
-  backdrop-filter: saturate(180%) blur(5px);
-  background-color: hsla(0, 0%, 98%, 0.8);
-  position: fixed;
-  top: 0;
-  z-index: 10;
-}
-
-.header > div {
-  width: 100%;
-  padding: 1rem 0;
-  border-bottom: 1px solid var(--color-border-secondary);
-}
-
-.title {
-  color: var(--color-text-link);
-  font-size: 1.5rem;
-}
-
 .grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(25%, auto));
@@ -99,37 +74,12 @@
 
 /* -- ANIMATIONS -- */
 
-.animFadeInRight {
-  animation: animation-fade-in-right 0.25s ease-out;
-}
-
 .animFadeInDown {
   animation: animation-fade-in-down 0.33s ease-out;
 }
 
 .animOpacity {
   animation: animation-opacity 0.25s ease-out;
-}
-
-@keyframes animation-fade-in-right {
-  from {
-    opacity: 0;
-    transform: translateX(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-@-webkit-keyframes animation-fade-in-right {
-  from {
-    opacity: 0;
-    transform: translateX(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
 }
 
 @keyframes animation-fade-in-down {
