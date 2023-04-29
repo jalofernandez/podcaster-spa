@@ -36,13 +36,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <header className={styles.header}>
+        <header className={`${styles.header} ${styles.animFadeInRight}`}>
           <div>
             <h1 className={styles.title}>{mainTitle}</h1>
           </div>
         </header>
 
-        <section className={styles.section}>
+        <section className={`${styles.section} ${styles.animFadeInDown}`}>
           <ul className={styles.grid}>
             {Array.isArray(data) && data.map((podcast) => (
               <li
@@ -59,11 +59,11 @@ export default function Home() {
                     height={96}
                   />
                 </picture>
-                <div className={`${styles.card}`}>
-                  <h3 className={`${styles.name}`}>
+                <div className={styles.card}>
+                  <h3 className={styles.name}>
                     {podcast['im:name'].label}
                   </h3>
-                  <h5 className={`${styles.artist}`}>
+                  <h5 className={styles.artist}>
                     {podcast['im:artist'].label}
                   </h5>
                 </div>
@@ -72,7 +72,7 @@ export default function Home() {
           </ul>
         </section>
 
-        <footer className={styles.center}>
+        <footer className={`${styles.center} ${styles.animOpacity}`}>
           <Image
             className={styles.logo}
             src="/podcaster-main-logo.svg"

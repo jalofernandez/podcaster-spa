@@ -22,12 +22,12 @@ export default function PodcastPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <header className={styles.header}>
+      <header className={`${styles.header} ${styles.animFadeInRight}`}>
           <div>
             <h1 className={styles.title}>{mainTitle}</h1>
           </div>
         </header>
-        <footer className={styles.center}>
+        <footer className={`${styles.center} ${styles.animOpacity}`}>
           <Image
             className={styles.logo}
             src="/podcaster-main-logo.svg"

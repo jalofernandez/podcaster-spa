@@ -97,6 +97,81 @@
   position: relative;
 }
 
+/* -- ANIMATIONS -- */
+
+.animFadeInRight {
+  animation: animation-fade-in-right 0.25s ease-out;
+}
+
+.animFadeInDown {
+  animation: animation-fade-in-down 0.33s ease-out;
+}
+
+.animOpacity {
+  animation: animation-opacity 0.25s ease-out;
+}
+
+@keyframes animation-fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes animation-fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes animation-fade-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes animation-fade-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes animation-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes animation-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* -- MEDIA -- */
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .article:hover {
