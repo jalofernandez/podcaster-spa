@@ -60,26 +60,8 @@
   border-radius: 100%;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  padding: 4rem 0;
-}
-
-.logo {
-  position: relative;
-}
-
-/* -- ANIMATIONS -- */
-
 .animFadeInDown {
   animation: animation-fade-in-down 0.33s ease-out;
-}
-
-.animOpacity {
-  animation: animation-opacity 0.25s ease-out;
 }
 
 @keyframes animation-fade-in-down {
@@ -100,23 +82,6 @@
   to {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes animation-opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes animation-opacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 
@@ -151,11 +116,5 @@
 @media (min-width: 701px) and (max-width: 1120px) {
   .grid {
     grid-template-columns: repeat(2, 50%);
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
   }
 }

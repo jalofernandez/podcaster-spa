@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 import styles from '@/styles/Home.module.css'
 
 import { useRouter } from 'next/router';
@@ -25,16 +25,7 @@ export default function PodcastPage() {
       <main className={`${styles.main} ${inter.className}`}>
         <Header title={mainTitle} />
 
-        <footer className={`${styles.center} ${styles.animOpacity}`}>
-          <Image
-            className={styles.logo}
-            src="/podcaster-main-logo.svg"
-            alt="Podacaster Logotype"
-            width={80}
-            height={80}
-            priority
-          />
-        </footer>
+        <Footer />
       </main>
     </>
   );
